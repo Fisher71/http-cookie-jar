@@ -1,0 +1,17 @@
+{
+  "name": "http-cookie-jar",
+  "version": "0.1.0",
+  "description": "Stores, retrieves, and expires cookies per the cookie-store model defined in RFC 6265 for a given URL.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {}
+}
