@@ -62,3 +62,10 @@ durability, serialise the jar's state yourself or use a different library.
   model.
 - **IPv6 hosts.** Not handled. Cookies are scoped to domain names; an IP-literal
   request host will produce no matches for any `Domain` attribute.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
